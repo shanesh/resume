@@ -31,8 +31,9 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
-    gulp.watch('./**/*.js').on('change', browserSync.reload);
-    gulp.watch('./**/*.html').on('change', browserSync.reload);
+    gulp.watch('./**/*.js','./**/*.css','./**/*.html').on('change', browserSync.reload);
+    // gulp.watch().on('change', browserSync.reload);
+    // gulp.watch().on('change', browserSync.reload);
 });
 
 
