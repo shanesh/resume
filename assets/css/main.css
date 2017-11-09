@@ -7255,7 +7255,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 body {
-  background: #006064;
-  font-size: 80px;
-  font-weight: bold;
-  color: white; }
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold; }
+  body section {
+    background: #ecf3f3;
+    height: 100vh; }
+  body .cards {
+    background: white; }
