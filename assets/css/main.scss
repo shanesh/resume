@@ -1,7 +1,12 @@
 // BOOTSTRAP
 @import "bootstrap/bootstrap";
 @import "bootstrap/custom";
-
+// FONTS
+@import url("//fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("//fonts.googleapis.com/css?family=Berkshire+Swash");
+@import url('https:');
+// COLOR
+@import "sass/color";
 // CUSTOM
 @import "sass/layout";
 @import "sass/section-header";

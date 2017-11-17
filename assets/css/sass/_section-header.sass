@@ -1,11 +1,22 @@
-header
+.background
   background: url('../img/background/white-bg.svg')
   background-repeat: no-repeat
   background-position: center
   background-size: cover
-  max-height: 768px
-  min-height: 768px
-  height: 100%
+header
+  @extend .background
+  p
+    max-height: 600px
+    min-height: 600px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $font-purple
+    @extend .berkshire
   .navbar-brand
     width: 60px
     height: auto
+
+section.about-me
+  @extend background
