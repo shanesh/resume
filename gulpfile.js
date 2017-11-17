@@ -24,16 +24,15 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
 });
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
-    gulp.watch('./**/*.css').on('change', browserSync.reload);
+    // gulp.watch('./**/*.css').on('change', browserSync.reload);
     gulp.watch('./**/*.js').on('change', browserSync.reload);
-    gulp.watch('./**/*.html').on('change', browserSync.reload);
+    // gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
 
