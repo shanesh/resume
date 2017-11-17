@@ -1,17 +1,19 @@
 .background
-  background: url('../img/background/white-bg.svg')
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+.flex
+  display: flex
+  justify-content: center
+  align-items: center
 header
   @extend .background
+  background-image: url('../img/background/white-bg.svg')
   p
     max-height: 600px
     min-height: 600px
     height: 100%
-    display: flex
-    justify-content: center
-    align-items: center
+    @extend .flex
     color: $font-purple
     @extend .berkshire
   .navbar-brand
@@ -19,4 +21,9 @@ header
     height: auto
 
 section.about-me
-  @extend background
+  font-size: 24px
+  color: white
+  @extend .flex
+  @extend .background
+  background-color: $bg-blue
+  background-image: url('../img/background/blue-bg.svg')
